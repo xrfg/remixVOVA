@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Geneva;
+    src: url(../fonts/Geneva.ttf);
+    font-family: MrsEaves;
+    src: url(../fonts/MrsEavRom);
+    font-family: PowerpuffGirls;
+    src: url(../fonts/powerpuffGirls.ttf);
+  }
+  
+  * {
+    /* making everything a border-box */
+    box-sizing: border-box;
+    /* making everything have 0 margin and padding thus "normalizing" the css */
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(190, 156, 245);
+    color: brown;
+    line-height: 25px;
+    letter-spacing: 0px;
+    word-spacing: 9px;
+    /* text-shadow: 00px 00px 2px black; */
+    z-index: 0; /* for the overlap */
+    margin: 0px;
+    position: absolute;
+  }
+
+  h1 {
+    font-family: Monaco, cursive, fantasy;
+    z-index: 0;
+    position: absolute;
+    font-size: 100px;
+    color: transparent;
+    text-shadow: 00px 00px 10px rgb(132, 33, 212);
+    margin: 535px 220px;
+  }
+
+  h1:hover {
+    transition: 3s ease;
+    color: transparent;
+    text-shadow: none;
+
+  }
+
+/*  img.wind {
+  position: absolute;
+  z-index: 0;
+  margin: 0px -60px;
+} */
+
+  .spontaneousText {
+    color: rgb(255, 255, 255);
+    height: 700px;
+  width: 500px;
+  margin: 20px 400px;
+  padding: 25px;
+  text-shadow:
+   -1px -1px 0 rgb(132, 30, 172),  
+    1px -1px 0 rgb(132, 30, 172),
+    -1px 1px 0 rgb(132, 30, 172),
+     1px 1px 0 rgb(132, 30, 172);
+     position: absolute;
+  }
+
+ #BS {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(9, 255, 0);
+     /*  background-image: url(../imgs/chess-board-chessboard-black-and-white-pattern-mugs.jpg.png); */
+  }
+  a.BS{
+    text-decoration: none;
+  }
+  
+
+  .lifeDetachText {
+    font-size: 18px;
+  font-family: MrsEaves, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 700px;
+    width: 500px;
+    z-index: 3;
+    position: absolute;
+    margin: 23px 900px;
+    color: transparent;
+    text-shadow: 00px 00px 3px white;
+    word-spacing: normal;
+  }
+
+  .lifeDetachText:hover {
+    transition: 1s ease;
+    color: white;
+  }
+

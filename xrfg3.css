@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Geneva;
+  src: url(../fonts/Geneva.ttf);
+  font-family: MrsEaves;
+  src: url(../fonts/MrsEavRom);
+}
+
+* {
+  /* making everything a border-box */
+  box-sizing: border-box;
+  /* making everything have 0 margin and padding thus "normalizing" the css */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: MrsEaves, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* background: rgb(141, 121, 140) */
+  background-color: rgb(196, 226, 209);
+  color: rgb(255, 170, 248);
+  /* line-height: 25px;
+    letter-spacing: 0px;
+    word-spacing: 9px; */
+  /* text-shadow: 00px 00px 2px black; */
+  z-index: 0; /* for the overlap */
+}
+
+img.pool {
+  position: absolute;
+  margin: 405px 0px 20px 520px;
+}
+
+section {
+  border-radius: 10px;
+  opacity: 0;
+  height: 700px;
+  width: 500px;
+  background-color: white;
+  margin: 30px 400px;
+  position: absolute; /* for the overlap */
+  z-index: 1; /* for the overlap */
+  box-shadow: 0 0 200px 10px black;
+}
+
+.text {
+  position: absolute;
+  z-index: 2;
+}
+
+p.text {
+  height: 700px;
+  width: 500px;
+  background-color: transparent;
+  margin: 20px 400px;
+  padding: 25px;
+  text-shadow:
+   -1px -1px 0 rgb(132, 30, 172),  
+    1px -1px 0 rgb(132, 30, 172),
+    -1px 1px 0 rgb(132, 30, 172),
+     1px 1px 0 rgb(132, 30, 172);
+  /* text-shadow: 00px 00px 2px rgb(132, 30, 172); */
+}
+
+.button {
+  border-radius: 50%;
+  margin: 185px 65px;
+  height: 30px;
+  width: 30px;
+  /* background-color: red; */
+  position: absolute;
+  z-index: 3;
+}
+
+.button .buttonText {
+  position: absolute;
+  z-index: 4;
+  visibility: hidden;
+  transition: 0.1s ease;
+}
+
+span {
+  font-size: 18px;
+  font-family: Geneva, sans-serif;
+  background: transparent;
+  color: blue;
+  line-height: 25px;
+  letter-spacing: 0px;
+  word-spacing: 9px;
+  text-shadow: 00px 00px 2px blue;
+  width: 580px;
+  height: 200px;
+  margin: 120px 605px;
+
+}
+
+.button:hover .buttonText {
+  visibility: visible;
+}
+
+img.flower {
+  animation: rotation 6s infinite linear;
+  filter: drop-shadow(0px 0px 20px rgb(191, 31, 255));/*  glow on a transparent image */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+p.moving{
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: brown;
+  position: absolute;
+}
+
+/* FOR THE SOUND
+embed {
+  position: absolute;
+  display: none;
+}
+
+button:hover + embed {
+  display: block;
+ */

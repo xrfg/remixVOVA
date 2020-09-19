@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 95vh; */
+    background-color: papayawhip;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */ /* for the overlap */
+    z-index: 0; /* for the overlap */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: tomato;
+}
+
+.chessboard {
+    box-sizing: content-box;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: black solid 1px;
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    margin: 350px 800px auto;
+    box-shadow:
+    0 0 0px 0px #fff,
+    0 0 0px 0px rgb(255, 255, 255),
+    0 0 35px 20px rgb(129, 129, 129);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    position: absolute; /* for the overlap */
+    z-index: 2; /* for the overlap */
+   /*  transition-property: transform;
+    transition-duration: 2s; */
+}
+
+/* #transform:hover {
+    transform: scale(0.5);
+} */
+
+.squareWhite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1fr;
+    height: 37.5px; /* it was 1fr, (not updated) 24.75px if i want to make it opaque again */
+    border: 0;
+    background-color: white;
+    color: black;
+}
+
+.squareBlack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1fr;
+    height: 37.5px; /* it was 1fr, (not updated) 24.75px if i want to make it opaque again */
+    border: 0;
+    background-color: black;
+}
+
+
+.video {
+    height: 300px;
+    width: 300px;
+    margin: 351px 801px;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    /* for the overlap, which z index this takes?? */
+  /*   transition-property: transform;
+    transition-duration: 2s; */
+}
+
+.squareWhite:hover {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.squareWhite:visited, .squareWhite:link {
+    background-color: white;
+    transition: 1s ease;
+}
+
+/* #glow {
+    box-shadow:
+   0 0 0px 0px #fff,
+   0 0 0px 0px rgb(255, 255, 255),
+   0 0 30px 4px rgb(226, 101, 226);
+   
+} */
+
+/* #its {
+    display: none;
+}
+
+#its + a:hover{
+    display: block;
+
+} */
+
+/* .container {
+    display: none;
+}
+.container a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .container a:active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .container a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  a:hover + .container {
+    text-decoration: none;
+    color: red;
+    display: block;
+  }
+  
+  .container li {
+    display: inline-block;
+  }
+  
+  .container {
+    list-style-type: none;
+    margin: 0;
+    padding: 100px;
+  } */
