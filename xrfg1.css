@@ -135,3 +135,46 @@ body {
     margin: 0;
     padding: 100px;
   } */
+
+.mobileHide{ display: none;}
+
+  .mobileShow {
+    background-color: darkcyan;
+  }
+
+  .sal {
+    display: block;
+    position: absolute;
+    margin: 40px 0px 40px 60px;
+    z-index: 0;
+    opacity: 75%;
+  }
+
+  .loja {
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  .mailText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+    margin: 100px;
+    color: rgb(255, 145, 0);
+    line-height: 25px;
+    letter-spacing: 3px;
+    word-spacing: 0px;
+    text-shadow: 00px 00px 2px rgb(9, 255, 0);
+    width: 170px;
+  }
+
+  strong {
+    font-size: 32px;
+  }
+
+  b {
+    color: transparent;
+    font-family: cursive;
+  }
