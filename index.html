@@ -18,9 +18,32 @@
       href="./favicomatic/favicon-16x16.png"
       sizes="16x16"
     />
+    
+    <style type="text/css"> 
+      .mobileShow {display: none;} 
+    
+      /* Smartphone Portrait and Landscape */ 
+      @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 480px){ 
+          .mobileShow {display: inline;}
+      }
+    </style>
+
+<style type="text/css">
+  .mobileHide { display: inline; } 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobileHide { display: none;}
+  }
+</style>
+    
   </head>
   <body>
-    <main>
+    <main class="mobileHide">
       <section id="transform" class="chessboard">
 
         <a id="hover" href="./xrfg2.html"><div class="squareWhite"></div></a>
@@ -103,37 +126,18 @@
       </section>
     </main>
 
-<div class="backVideo">
+<div class="backVideo mobileHide">
     <video id="transform" class="video" autoplay muted loop>
         <source src="IMG_3912 2.mov">
     </video>
-
-<!--     <div>
-      <ul class="container">
-        <div>
-          <li><a class="random" href="">it's</a></li>
-          <li><a class="random" href="">like</a></li>
-          <li><a class="random" href="">yeah</a></li>
-          <li><a class="random" href="">_</a></li>
-          <li><a class="random" href="">we</a></li>
-          <li><a class="random" href="">connect</a></li>
-        </div>
-        <div>
-          <li><a class="random" href="">you</a></li>
-          <li><a class="random" href="">seem</a></li>
-          <li><a class="random" href="">so</a></li>
-          <li><a class="random" href="">soft</a></li>
-          <li><a class="random" href="">and</a></li>
-          <li><a class="random" href="">squishy</a></li>
-        </div>
-        <div>
-          <li><a class="random" href="">guess</a></li>
-          <li><a class="random" href="">i</a></li>
-          <li><a class="random" href="">like</a></li>
-          <li><a class="random" href="">that</a></li>
-        </div>
-      </ul>
-    </div> -->
+    </div>
+    
+     <article class="mobileShow"> 
+      <section><a class="mailText" href="mailto:?subject=xrfg:remixVOVA
+&body=https://xrfg.github.io/remixVOVA/"><strong>xrfg:</strong>this doesn't work on the phone, <br> click <b>here</b> to mail yourself the link for later on the laptop ;)</a></section>
+<img class="sal" src="imgs/78a675c5f956e7c93a020b7b662340c9.jpg" alt="iAm" width="300px" height="300px">
+<img class="loja" src="./imgs/9a191988e18bb6647516e68b699af61f.jpg" alt="numb">
+    </article>
 
   </body>
 </html>
