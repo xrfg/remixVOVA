@@ -138,13 +138,13 @@ body {
 
 .mobileHide{ display: none;}
 
-  .sal {
+  /* .sal {
     display: block;
     position: absolute;
     margin: 40px 0px 40px 60px;
     z-index: 0;
     opacity: 75%;
-  }
+  } */
 
   .loja {
     width: 100vw;
@@ -153,21 +153,23 @@ body {
   }
 
   .mailText {
+    font-size: 28px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     text-decoration: none;
     z-index: 1;
-    margin: 100px;
+    margin: 100px 0px 0px 100px;
     color: rgb(255, 145, 0);
-    line-height: 25px;
+    line-height: 40px;
     letter-spacing: 3px;
-    word-spacing: 0px;
+    word-spacing: 3px;
     text-shadow: 00px 00px 2px rgb(9, 255, 0);
-    width: 170px;
+    width: 270px;
+    height: 270px;
   }
 
   strong {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   b {
