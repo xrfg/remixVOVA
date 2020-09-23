@@ -138,10 +138,6 @@ body {
 
 .mobileHide{ display: none;}
 
-  .mobileShow {
-    background-color: darkcyan;
-  }
-
   .sal {
     display: block;
     position: absolute;
