@@ -2,4 +2,4 @@
 
 > for my friends, borgs and unknowns, i'm sharing a tiny website having made my first baby steps into writing code.
 
-![s&p](./imgs/78a675c5f956e7c93a020b7b662340c9.jpg)
+![](78a675c5f956e7c93a020b7b662340c9.jpg)
